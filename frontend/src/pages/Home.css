@@ -1,0 +1,146 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    background-color: #3498db; /* Blue color */
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar .nav-links li {
+    display: inline-block;
+  }
+  
+  .navbar .nav-links a,
+  .navbar .nav-links button {
+    text-decoration: none;
+    color: white;
+    background-color: #3498db;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar .nav-links a:hover,
+  .navbar .nav-links button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+  }
+  
+  /* Home Content */
+  .home-content {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .home-content h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .home-content p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Blog List */
+  .blog-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .blog-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .blog-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .blog-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .blog-card button {
+    background-color: #e74c3c; /* Red color for delete button */
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .blog-card button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+  }
+  
+  .blog-card p strong {
+    color: #3498db; /* Blue color for "author" and "created" labels */
+  }
+  
+  /* Add Blog Link */
+  .navbar .nav-links li a {
+    font-weight: bold;
+    color: #2980b9; /* Blue color for "Add Blog" link */
+  }
+  
+  /* Delete Confirmation Button (if necessary for cleanup) */
+  button {
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
